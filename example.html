@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Svg Underline replacer</title>
+		<script src="svgUnderline.js"></script>
+	</head>
+	<body>
+		<svg width="1000" height="500" >
+	        <text x = "10" y = "20" style="font-family: Georgia, serif; font-size:12pt; text-decoration: underline;">Georgia, serif.</text>
+	        <text x = "10" y = "50" style="font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; font-size:14pt; text-decoration: underline;">Palatino Linotype, Book Antiqua, Palatino, serif</text>
+	        <text x = "10" y = "80" style="font-family: 'Times New Roman', Times, serif; font-size:16pt; text-decoration: underline;">Times New Roman, Times, serif</text>
+	        <text x = "10" y = "110" style="font-family: Arial, Helvetica, sans-serif; font-size:18pt; text-decoration: underline;">Arial, Helvetica, sans-serif</text>
+	        <text x = "10" y = "140" style="font-family: 'Arial Black', Gadget, sans-serif; font-size:20pt; text-decoration: underline;">Arial Black, Gadget, sans-serif</text>
+	        <text x = "10" y = "170" style="font-family: 'Comic Sans MS', cursive, sans-serif; font-size:22pt; text-decoration: underline;">Comic Sans MS, cursive, sans-serif</text>
+	        <text x = "10" y = "210" style="font-family: Impact, Charcoal, sans-serif; font-size:24pt; text-decoration: underline;">Impact, Charcoal, sans-serif</text>
+	        <text x = "10" y = "250" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-size:26pt; text-decoration: underline;">Lucida Sans Unicode, Lucida Grande, sans-serif</text>
+	        <text x = "10" y = "290" style="font-family: Tahoma, Geneva, sans-serif; font-size:28pt; text-decoration: underline;">Tahoma, Geneva, sans-serif</text>
+	        <text x = "10" y = "340" style="font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size:30pt; text-decoration: underline;">Trebuchet MS, Helvetica, sans-serif</text>
+	        <text x = "10" y = "390" style="font-family: Verdana, Geneva, sans-serif; font-size:32pt; text-decoration: underline;">Verdana, Geneva, sans-serif</text>
+	        <text x = "10" y = "435" style="font-family: 'Courier New', Courier, monospace; font-size:34pt; text-decoration: underline;">Courier New, Courier, monospace</text>
+	        <text x = "10" y = "490" style="font-family: 'Lucida Console', Monaco, monospace; font-size:36pt; text-decoration: underline;">Lucida Console, Monaco, monospace</text>
+		</svg>
+
+		<script>
+			var texts = document.querySelectorAll('svg text');
+			svgUnderline.replaceAll(texts);
+		</script>
+	</body>
+</html>
