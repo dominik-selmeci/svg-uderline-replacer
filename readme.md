@@ -24,3 +24,6 @@ svgUnderline.replaceAll(texts);
 var texts = document.querySelector('svg text');
 svgUnderline.replace(text);
 ```
+---
+
+Code is inspired by [underlineJS](https://github.com/wentin/underlineJS)
