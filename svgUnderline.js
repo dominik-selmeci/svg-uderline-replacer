@@ -77,7 +77,7 @@
 
 		var elStyles = getComputedStyle(element);
 		var fontSize = parseFloat(elStyles.fontSize);
-		var fontSizePt = Math.round(fontSize * 72/96);
+		var elBBox = element.getBBox();
 
 		var ratio = 1; //window.devicePixelRatio
 
@@ -90,7 +90,7 @@
 	    this.strokeWidth = dotWidth/12;
 
 	    // calculate the optimized width based on font
-	    var underlinePosition = parseFloat(elStyles.height) * ratio *
+	    var underlinePosition = elBBox.height * ratio *
 	            ( 1 - this.baselineRatio(elStyles.fontFamily) + 
 	            this.baselineRatio(elStyles.fontFamily) * 0.4) +
 	            this.strokeWidth/2;
@@ -99,7 +99,7 @@
 	    this.strokeWidth = optimalStrWidPos.strokeWidth;
 	    underlinePosition = optimalStrWidPos.posY;
 
-	    return (1 - underlinePosition / parseFloat(elStyles.height));
+	    return (1 - underlinePosition / elBBox.height);
 	};
 
 
